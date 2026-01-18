@@ -1,6 +1,8 @@
 substitutions:
-  name: brink
-  friendly_name: Brink
+  name: brink_flair_300
+  hostname: brink-flair-300
+  friendly_name: Brink Flair 300
+  area: Mechanische Ruimte
   device_description: "Esphome component for Brink Flair with modbus"
   timezone: "Europe/Amsterdam"
 ###  Settings Brink Flair (no need to change normally)
@@ -15,16 +17,14 @@ substitutions:
 
 packages:
   remote_package:
-    url: https://github.com/fonske/Brink-flair-modbus
+    url: https://github.com/Darsstar/brink-flair-modbus
     ref: main
     refresh: 0s
-    files: [ esphome/type/brink-325.yaml,
-             esphome/labels/.brink-labels-en.yaml, 
-             esphome/.brink.base.yaml, 
-             esphome/boards/board-m5stack-atoms3-lite.yaml,
-#             esphome/sensors/sensor-enviv-i2c-m5stack.yaml,
-#             esphome/sensors/sensor-brink_hum_sensor.yaml,
-#             esphome/sensors/sensor-brink_co2_1_sensor.yaml
+    files: [ esphome/type/brink-300.yaml,
+             esphome/labels/.brink-labels-en.yaml,
+             esphome/.brink.base.yaml,
+             esphome/boards/board-lilygo-t-rss3.yaml,
+             esphome/sensors/sensor-brink_co2_2_sensor.yaml
            ]
     ## options are:
       # esphome/type/.brink-200.yaml

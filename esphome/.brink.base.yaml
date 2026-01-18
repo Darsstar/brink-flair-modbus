@@ -1,8 +1,9 @@
 # base configuration, used in all cases.
 
 esphome:
-  name: ${name}
+  name: ${hostname}
   friendly_name: ${friendly_name}
+  area: ${area}
   on_boot:
     priority: 200
     then:
@@ -54,6 +55,7 @@ script:
 modbus:
   id: modbus_brink
   send_wait_time: 200ms
+  flow_control_pin: GPIO4
 
 modbus_controller:
   - id: ${name}
