@@ -11,8 +11,8 @@ uart:
   id: mod_bus
   baud_rate: 19200
   stop_bits: 1
-  tx_pin: GPIO3
-  rx_pin: GPIO2
+  tx_pin: GPIO02
+  rx_pin: GPIO03
   parity: even
 
 # Option for 2x I2C connectors  ***experimental***
@@ -94,4 +94,4 @@ web_server:
 # Enable Status LED.
 status_led:
   pin:
-    number: GPIO1
+    number: GPIO01
