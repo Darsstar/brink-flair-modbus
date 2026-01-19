@@ -11,8 +11,12 @@ uart:
   id: mod_bus
   baud_rate: 19200
   stop_bits: 1
-  tx_pin: GPIO02
-  rx_pin: GPIO03
+  tx_pin:
+    number: GPIO03
+    inverted: true
+  rx_pin:
+    number: GPIO02
+    inverted: true
   parity: even
 
 # Option for 2x I2C connectors  ***experimental***
