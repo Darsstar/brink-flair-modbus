@@ -64,9 +64,9 @@ button:
 # Enable/Disable logging
 logger:
   logs:
-#    modbus_controller.sensor: WARN
-#    modbus_controller.output: WARN
-#    modbus.number: WARN
+    modbus_controller.sensor: DEBUG
+    modbus_controller.output: DEBUG
+    modbus.number: DEBUG
     esp32.preferences: WARN
     sensor: WARN
     text_sensor: WARN
