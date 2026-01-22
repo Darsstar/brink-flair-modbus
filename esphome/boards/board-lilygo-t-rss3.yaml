@@ -13,6 +13,7 @@ uart:
   stop_bits: 1
   tx_pin: GPIO02
   rx_pin: GPIO03
+  flow_control_pin: GPIO04
   parity: even
 
 # Option for 2x I2C connectors  ***experimental***
