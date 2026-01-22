@@ -55,7 +55,7 @@ script:
 modbus:
   id: modbus_brink
   send_wait_time: 200ms
-  flow_control_pin: GPIO4
+  flow_control_pin: GPIO04
   disable_crc: true
 
 modbus_controller:
