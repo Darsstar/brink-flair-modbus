@@ -71,7 +71,9 @@ logger:
   logs:
     modbus_controller.sensor: DEBUG
     modbus_controller.output: DEBUG
+    modbus_controller: DEBUG
     modbus.number: DEBUG
+    modbus: DEBUG
     esp32.preferences: WARN
     sensor: WARN
     text_sensor: WARN
