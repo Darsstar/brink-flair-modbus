@@ -11,8 +11,12 @@ uart:
   id: mod_bus
   baud_rate: 19200
   stop_bits: 1
-  tx_pin: GPIO3
-  rx_pin: GPIO2
+  tx_pin:
+    number: GPIO3
+    inverted: true
+  rx_pin:
+    number: GPIO2
+    inverted: true
   flow_control_pin: GPIO4
   parity: even
 
