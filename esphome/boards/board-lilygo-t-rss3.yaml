@@ -94,6 +94,14 @@ web_server:
 
 # Enable Status LED.
 light:
-  - platform: status_led
-    name: "Switch state"
+  - platform: neopixelbus
+    name: "NeoPixel Light"
+    variant: WS2812
+    num_leds: 60
+    method:
+      type: bit_bang
     pin: GPIO01
+    on_state:
+    - logger.log: "Light State Changed!"
+    effects:
+      - random:
