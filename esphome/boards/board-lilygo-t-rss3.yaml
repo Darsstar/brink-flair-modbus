@@ -105,3 +105,12 @@ web_server:
 #    - logger.log: "Light State Changed!"
 #    effects:
 #      - random:
+
+# Example configuration entry
+light:
+  - platform: neopixelbus
+    type: GRB
+    variant: WS2812
+    pin: GPIO1
+    num_leds: 1
+    name: "NeoPixel Light"
