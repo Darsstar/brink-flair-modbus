@@ -93,15 +93,15 @@ web_server:
   port: 80
 
 # Enable Status LED.
-light:
-  - platform: neopixelbus
-    name: "NeoPixel Light"
-    variant: WS2812
-    num_leds: 60
-    method:
-      type: bit_bang
-    pin: GPIO01
-    on_state:
-    - logger.log: "Light State Changed!"
-    effects:
-      - random:
+#light:
+#  - platform: neopixelbus
+#    name: "NeoPixel Light"
+#    variant: WS2812
+#    num_leds: 60
+#    method:
+#      type: bit_bang
+#    pin: GPIO01
+#    on_state:
+#    - logger.log: "Light State Changed!"
+#    effects:
+#      - random:
